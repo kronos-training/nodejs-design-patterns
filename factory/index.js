@@ -1,8 +1,9 @@
-const Employee = require('./Employee');
-const Shopper = require('./Shopper');
+const userFactory = require('./userFactory');
 
-const alex = new Shopper('Alex Banks', 100);
-const eve = new Employee('Eve Porcello', 100, 'This and That');
+const alex = userFactory('Alex Banks', 100);
+const eve = userFactory('Eve Porcello', 100, 'employee', 'This and That');
+
+eve.payDay(100);
 
 console.log(alex.toString());
 console.log(eve.toString());

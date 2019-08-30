@@ -3,6 +3,10 @@ class Shopper {
     this.name = name;
     this.money = money;
   }
+
+  toString() {
+    return JSON.stringify(this);
+  }
 }
 
 module.exports = Shopper;
